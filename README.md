@@ -1,6 +1,4 @@
-# koodihaaste
-Jee, pääsin! :) t. Sami
-Hyvä t. Essi
+# Koodihaaste
 
 ## Linkki koodihaasteeseen
 https://koodihaaste.solidabis.com/#/
