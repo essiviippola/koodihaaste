@@ -1,5 +1,19 @@
+.jumbotron {
+    position: relative;
+    padding: 60px 0 30px;
+    background:#eee;
+    text-align: center;
+}
+
+.container-fluid {
+    padding: 0 !important;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
 h1 {
-    border-bottom: 4px solid rgb(51, 102, 255);
+    border-bottom: 4px solid #222;
 }
 
 body {
@@ -19,4 +33,10 @@ header + p {
 
 .row {
     margin-top: 1em
+}
+
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 30px;
 }
