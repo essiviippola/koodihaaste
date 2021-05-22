@@ -18,18 +18,3 @@ Toteutuksessa käytettävät teknologiat ovat vapaasti päätettävissäsi. Teht
 Katso vielä lisätiedot tehtävän arviointikriteereistä sekä tarkempi ohje siitä, mitä palautuksessa tulee huomioida.
 
 Onnea koodihaasteeseen ja mukavaa (kesä)koodailua!
-
-## Suunnitelma
-Essi ottaa haltuun javascriptiä.
-
-Sami ottaa haltuun HTML ja CSS.
-
-### Apuja
-- Chrome DevTools
-- Nettiin: AWS, Heroku tai Samin sivu (Wordpress)
-- Google fonts: Josefin sans, Playfair display, Roboto, Helvetica (isona)
-- Javascript best practices:
-  - Älä käytä var, vaan let tai const;
-  - Funktioiden nimet alkaa pienellä ja käytetään camelCase;
-  - Käytä mieluummin null;
-  - Käytetään ===, eikä ==.
