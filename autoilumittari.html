@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>Autoilumittari</title>
     </head>
@@ -16,32 +18,34 @@
 
         </section>
     </body>
-    <form action="http://localhost:5500/api/post" method = "POST">
+    <form id="myform" action="" method = "POST">
         <div class="input-group">
             <div><label for="car-type">Car type</label></div>
             <div>
-                <select name="car-type" id="car-type">
-                    <option value="" selected>[ Select one ]</option>
-                    <option value="3">Car A: 3 km/h</option>
-                    <option value="3.5">Car B: 3.5 km/h</option>
-                    <option value="4">Car C: 4 km/h</option>
-                </select>
+                <input type="radio" id="car-a" name="car-type" value="A">
+                <label for="car-a">A</label><br>
+                <input type="radio" id="car-b" name="car-type" value="B">
+                <label for="car-b">B</label><br>
+                <input type="radio" id="car-c" name="car-type" value="C">
+                <label for="car-c">C</label><br>
             </div>
         </div>
         <div class="input-group">
             <div><label for="distance">Distance (km)</label></div>
-            <div><input type="number" id="distance" name="distance"></div>
+            <div><input type="number" id="distance" name="distance" min="0"></div>
         </div>
         <div class="input-group">
-            <div><label for="speed1">Speed 1</label></div>
-            <div><input type="number" id="speed1" name="speed1"></div>
-            <div><label for="speed2">Speed 2</label></div>
-            <div><input type="number" id="speed2" name="speed2"></div>
+            <label for="speed1">Speed 1</label>
+            <div></div><input type="number" id="speed1" name="speed1" min="0"></div>
+            <label for="speed2">Speed 2</label>
+            <div><input type="number" id="speed2" name="speed2" min="0"></div>
         </div>
         <div class="input-group">
-            <input type="submit" id="submit" name="submit">
-            <input type="reset" id="reset" name="reset">
+            <br>
+            <input type="reset" id="reset" name="reset" value="Reset">
         </div>
     </form>
+
     <script src="utils.js"></script>
+
 </html>
