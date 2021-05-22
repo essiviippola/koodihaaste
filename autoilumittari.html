@@ -25,13 +25,18 @@
             <li>C: 4 l/100 km</li>
         </ul>
 
-        <h2>Syötä matka, jonka ajat</h2>
-        <p><span class="box">INPUT-boksi</span> km</p>
-
-        <h2>Syötä vertailtavat nopeudet</h2>
-        <p><span class="box">INPUT-boksi</span> km/h</p>
-        <p><span class="box">INPUT-boksi</span> km/h</p>
+        <h2>Syötä matka, jonka ajat ja vertailtavat nopeudet</h2>
+        <form action="" method = "POST">
+            <input type="text" id="distance" name="distance">
+            <input type="text" id="speed1" name="speed1">
+            <input type="text" id="speed2" name="speed2">
+            <input type="submit" id="submit" name="submit">
+            <input type="reset" id="reset" name="reset">
+        </form>
     </section>
+
+    <script src="utils.js"></script>
+
 </body>
 
 </html>
