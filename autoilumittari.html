@@ -16,10 +16,32 @@
 
         </section>
     </body>
-    <form action="" method = "POST">
-        <input type="text" id="full-name" name="full-name">
-        <input type="submit" id="submit" name="submit">
-        <input type="reset" id="reset" name="reset">
+    <form action="http://localhost:5500/api/post" method = "POST">
+        <div class="input-group">
+            <div><label for="car-type">Car type</label></div>
+            <div>
+                <select name="car-type" id="car-type">
+                    <option value="" selected>[ Select one ]</option>
+                    <option value="3">Car A: 3 km/h</option>
+                    <option value="3.5">Car B: 3.5 km/h</option>
+                    <option value="4">Car C: 4 km/h</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-group">
+            <div><label for="distance">Distance (km)</label></div>
+            <div><input type="number" id="distance" name="distance"></div>
+        </div>
+        <div class="input-group">
+            <div><label for="speed1">Speed 1</label></div>
+            <div><input type="number" id="speed1" name="speed1"></div>
+            <div><label for="speed2">Speed 2</label></div>
+            <div><input type="number" id="speed2" name="speed2"></div>
+        </div>
+        <div class="input-group">
+            <input type="submit" id="submit" name="submit">
+            <input type="reset" id="reset" name="reset">
+        </div>
     </form>
     <script src="utils.js"></script>
 </html>
