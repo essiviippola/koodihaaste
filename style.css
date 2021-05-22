@@ -16,3 +16,7 @@ header + p {
 .box {
     border: 2px solid black;
 }
+
+.row {
+    margin-top: 1em
+}
