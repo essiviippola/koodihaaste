@@ -8,7 +8,7 @@ body {
 
 header + p {
     font-weight: bold;
-    background-color: rgba(255, 51, 78, 0.849);
+    background-color: rgba(27, 140, 216, 0.849);
     color: #fff;
     padding: .5em;
 }
