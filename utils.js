@@ -5,8 +5,6 @@ let selectedDistance;
 let selectedSpeed1;
 let selectedSpeed2;
 
-let consumption = 0;
-
 const consumptionDict = {"A": 3.0, "B": 3.5, "C": 4.0};
 
 form.addEventListener("change", function(e){
@@ -25,10 +23,22 @@ form.addEventListener("change", function(e){
     selectedSpeed2 = document.querySelector("#speed2").value;
 
     if(selectedCar && selectedDistance && selectedSpeed1 && selectedSpeed2){
-        output = document.getElementById("test");
-        output.innerHTML = "Selected values: " + [selectedCar, selectedDistance, selectedSpeed1, selectedSpeed2];
 
-        consumption = consumptionDict[selectedCar];
+        let msg = [];
+        let time1 = selectedDistance / selectedSpeed1;
+        let time2 = selectedDistance / selectedSpeed2;
+        let timeDiff = time1 - time2;
+        let consumption = consumptionDict[selectedCar];
+        let consumption_total = consumption * selectedDistance / 100;
+
+        msg.push("Aika1: " + time1 + " h");
+        msg.push("Aika2: " + time2 + " h");
+        msg.push("Time difference: " + timeDiff + " h");
+        msg.push("Consumption: " + consumption_total + " l");
+        msg = msg.join("<br/>");
+
+        document.getElementById("test").innerHTML = msg
+        console.log(msg);
     
     }
 
