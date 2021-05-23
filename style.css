@@ -21,12 +21,12 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-header + p {
+/* header + p {
     font-weight: bold;
     background-color: rgba(27, 140, 216, 0.849);
     color: #fff;
     padding: .5em;
-}
+} */
 
 .box {
     border: 2px solid black;
