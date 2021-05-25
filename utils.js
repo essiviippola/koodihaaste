@@ -45,16 +45,16 @@ form.addEventListener("change", function (e) {
         let consumption2 = 1.009 ** (selectedSpeed2 - 1) * consumption;
         // Calculates total consumption (l) for the selected distances for both speeds and rounds it to two decimals places.
         let tot_consumption1 = selectedDistance / 100 * consumption1;
-        let tot_consumption2 = (selectedDistance / 100 * consumption2).toFixed(2);
+        let tot_consumption2 = selectedDistance / 100 * consumption2;
         let consumptionDiff = Math.abs(tot_consumption1 - tot_consumption2);
 
 
         msg.push("Nopeudella " + selectedSpeed1 + " km/h aikaa kuluu " + convertTimeFormat(time1));
         msg.push("Tällä nopeudella polttoainekulutus on " + tot_consumption1.toFixed(2) + " litraa. <br/>");
         msg.push("Nopeudella " + selectedSpeed2 + " km/h aikaa kuluu " + convertTimeFormat(time2));
-        msg.push("Tällä nopeudella polttoainekulutus on " + tot_consumption2 + " litraa. <br/>");
+        msg.push("Tällä nopeudella polttoainekulutus on " + tot_consumption2.toFixed(2) + " litraa. <br/>");
 
-        msg.push("Kulutus kasvaisi " + consumptionDiff + " litraa ja aikaa säästyisi " + convertTimeFormat(timeDiff));
+        msg.push("Kulutus kasvaisi " + consumptionDiff.toFixed(2) + " litraa ja aikaa säästyisi " + convertTimeFormat(timeDiff));
         //msg.push("Consumption1: " + consumption1 + " l");
         //msg.push("Consumption2: " + consumption2 + " l");
 
