@@ -44,7 +44,7 @@ form.addEventListener("change", function (e) {
         let consumption1 = 1.009 ** (selectedSpeed1 - 1) * consumption;
         let consumption2 = 1.009 ** (selectedSpeed2 - 1) * consumption;
         // Calculates total consumption (l) for the selected distances for both speeds.
-        let tot_consumption1 = selectedDistance / 100 * consumption2;
+        let tot_consumption1 = selectedDistance / 100 * consumption1;
         let tot_consumption2 = selectedDistance / 100 * consumption2;
 
         // Next line is testing, so ignore it.
@@ -52,7 +52,7 @@ form.addEventListener("change", function (e) {
         msg.push("Nopeudella " + selectedSpeed1 + " km/h aikaa kuluu " + convertTimeFormat(time1));
         msg.push("Tällä nopeudella polttoainekulutus on " + tot_consumption1 + " litraa.");
         msg.push("Nopeudella " + selectedSpeed2 + " km/h aikaa kuluu " + convertTimeFormat(time2));
-        msg.push("Suuremmalla nopeudella aikaa voitetaan siis " + convertTimeFormat(timeDiff));
+        msg.push("Suuremmalla nopeudella aikaa säästyy " + convertTimeFormat(timeDiff));
         //msg.push("Consumption1: " + consumption1 + " l");
         //msg.push("Consumption2: " + consumption2 + " l");
 
