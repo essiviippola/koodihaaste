@@ -38,21 +38,23 @@ form.addEventListener("change", function (e) {
         let msg = [];
         let time1 = selectedDistance / selectedSpeed1;
         let time2 = selectedDistance / selectedSpeed2;
-        let timeDiff = time1 - time2;
+        let timeDiff = Math.abs(time1 - time2);
         let consumption = consumptionDict[selectedCar];
         // Calculates the consumption (l/100 km) for both speeds.
         let consumption1 = 1.009 ** (selectedSpeed1 - 1) * consumption;
         let consumption2 = 1.009 ** (selectedSpeed2 - 1) * consumption;
-        // Calculates total consumption (l) for the selected distances for both speeds.
+        // Calculates total consumption (l) for the selected distances for both speeds and rounds it to two decimals places.
         let tot_consumption1 = selectedDistance / 100 * consumption1;
-        let tot_consumption2 = selectedDistance / 100 * consumption2;
+        let tot_consumption2 = (selectedDistance / 100 * consumption2).toFixed(2);
+        let consumptionDiff = Math.abs(tot_consumption1 - tot_consumption2);
 
-        // Next line is testing, so ignore it.
-        msg.push(1.009 ** (1 - 1) * consumption);
+
         msg.push("Nopeudella " + selectedSpeed1 + " km/h aikaa kuluu " + convertTimeFormat(time1));
-        msg.push("Tällä nopeudella polttoainekulutus on " + tot_consumption1 + " litraa.");
+        msg.push("Tällä nopeudella polttoainekulutus on " + tot_consumption1.toFixed(2) + " litraa. <br/>");
         msg.push("Nopeudella " + selectedSpeed2 + " km/h aikaa kuluu " + convertTimeFormat(time2));
-        msg.push("Suuremmalla nopeudella aikaa säästyy " + convertTimeFormat(timeDiff));
+        msg.push("Tällä nopeudella polttoainekulutus on " + tot_consumption2 + " litraa. <br/>");
+
+        msg.push("Kulutus kasvaisi " + consumptionDiff + " litraa ja aikaa säästyisi " + convertTimeFormat(timeDiff));
         //msg.push("Consumption1: " + consumption1 + " l");
         //msg.push("Consumption2: " + consumption2 + " l");
 
