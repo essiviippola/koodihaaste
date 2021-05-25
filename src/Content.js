@@ -30,4 +30,18 @@ class NameForm extends React.Component {
     }
 }
 
-export default NameForm;
+function Content(){
+    return(
+        <div class="row">
+            <div class="col-md-4 border-right">
+                <p>Eka sarake</p>
+                <NameForm></NameForm>
+            </div>
+            <div class="col-md-8">
+                <p>Toinen sarake</p>
+            </div>
+        </div>
+    )
+}
+
+export default Content;

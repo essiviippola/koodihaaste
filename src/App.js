@@ -10,7 +10,6 @@ function App() {
     return(
         <div className="App">
             <Header></Header>
-            <p>Moi Sami!</p>
             <Content></Content>
             <Footer></Footer>
         </div>
