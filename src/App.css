@@ -1,3 +1,8 @@
+/* Removes white space from the right side of page */
+html {
+    overflow-x: hidden;
+}
+
 .jumbotron {
     position: relative;
     padding: 60px 0 30px 0;
