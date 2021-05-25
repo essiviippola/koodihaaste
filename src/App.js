@@ -1,9 +1,11 @@
 import React from "react";
+import "./index.css"
+import Header from "./Header"
 
-function App(){
+function App() {
     return(
         <div className="App">
-            <p>Moi Sami!</p>
+            <Header></Header>
         </div>
     );
 }
