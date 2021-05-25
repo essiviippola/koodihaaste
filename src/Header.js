@@ -1,14 +1,14 @@
 import React from "react";
 
-function Header {
-    return (
-        <div class="jumbotron">
-            <header class="page-header header container-fluid">
+function Header(){
+    return(
+        <header class="page-header header container-fluid">
+            <div class="jumbotron">
                 <h1>Autoilumittarisovellus</h1>
-            </header>
-            <p>Autoilumittarin avulla voit verrata kahden eri nopeuden vaikutusta ajoneuvon kulutukseen.</p>
-        </div>
-    )
+                <p>Autoilumittarin avulla voit verrata kahden eri nopeuden vaikutusta ajoneuvon kulutukseen.</p>
+            </div>
+        </header>
+    );
 }
 
 export default Header;
