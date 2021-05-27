@@ -2,14 +2,22 @@ import React from "react";
 
 import "./App.css";
 import Header from "./Header"
-import Footer from "./Footer"
+import Form from "./Form"
 import Content from "./Content"
+import Footer from "./Footer"
 
 function App() {
-    return(
+    return (
         <div className="App">
             <Header></Header>
-            <Content></Content>
+            <div className="row">
+                <div className="col-md-4 border-right">
+                    <Form/>
+                </div>
+                <div className="col-md-8">
+                    <Content></Content>
+                </div>
+            </div>
             <Footer></Footer>
         </div>
     );
