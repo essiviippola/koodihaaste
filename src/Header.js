@@ -2,7 +2,7 @@ import React from "react";
 
 function Header(){
     return(
-        <header class="jumbotron">
+        <header className="jumbotron">
             <h1>Autoilumittarisovellus</h1>
             <p>Autoilumittarin avulla voit verrata kahden eri nopeuden vaikutusta ajoneuvon kulutukseen.</p>
         </header>

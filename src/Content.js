@@ -8,49 +8,70 @@ class InputForm extends React.Component {
     }
 
     handleChange(event) {
-        this.setState({ value: event.target.value });
+        const value = event.target.value;
+        this.setState({ 
+            ...this.state, 
+            [event.target.name]: value
+        });
+        console.log(event.target.value);
     }
 
     render() {
         return (
             <form>
-                <div onChange={this.state.value} class="form-check-inline">
-                    <input type="radio" class="form-check-input" value="A" name="car" /> A
-                    <input type="radio" class="form-check-input" value="B" name="car" /> B
-                    <input type="radio" class="form-check-input" value="C" name="car" /> C
-                </div>
-                <div onChange={this.state.value}>
-                    <label>
-                        Etäisyys:
-                        <input class="form-control" type="number" placeholder="km" id="distance" name="distance" min="0" value={this.state.value} onChange={this.handleChange} />
-                    </label>
-                </div>
-                <div onChange={this.state.value}>
-                    <label>
-                        Nopeus 1:
-                        <input class="form-control" type="number" placeholder="km" id="distance" name="distance" min="0" value={this.state.value} onChange={this.handleChange} />
-                    </label>
-                </div>
-                <div onChange={this.state.value}>
-                    <label>
-                        Nopeus 2:
-                        <input class="form-control" type="number" placeholder="km" id="distance" name="distance" min="0" value={this.state.value} onChange={this.handleChange} />
-                    </label>
+                <div className="form-group" onChange={this.handleChange}>
+                    <div className="form-check-inline">
+                        <input type="radio" value="A" name="car" /> A
+                        <input type="radio" value="B" name="car" /> B
+                        <input type="radio" value="C" name="car" /> C
+                    </div>
+                    <div>
+                        <label>
+                            Etäisyys:
+                            <input type="number" placeholder="km" id="distance" name="distance" min="0" value={this.state.distance} />
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Nopeus 1:
+                            <input type="number" placeholder="km/h" id="speed1" name="speed1" min="0" value={this.state.speed1}/>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Nopeus 2:
+                            <input type="number" placeholder="km/h" id="speed2" name="speed2" min="0" value={this.state.speed2} />
+                        </label>
+                    </div>
                 </div>
             </form>
         );
     }
 }
 
+class Cards extends React.Component {
+    render() {
+        return (
+            <div>
+                <div className="card">
+                    Testing cards
+                </div>
+                <div className="card">
+                    Second card
+                </div>
+            </div>
+        )
+    }
+}
+
 function Content() {
     return (
-        <div class="row">
-            <div class="col-md-4 border-right">
-                <p>Eka sarake</p>
+        <div className="row">
+            <div className="col-md-4 border-right">
                 <InputForm></InputForm>
             </div>
-            <div class="col-md-8">
-                <p>Toinen sarake</p>
+            <div className="col-md-8">
+                <Cards></Cards>
             </div>
         </div>
     )
