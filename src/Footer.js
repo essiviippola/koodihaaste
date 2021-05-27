@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer(){
     return(
-        <footer className="page-footer">
+        <footer className="footer page-footer">
             <div className="row">
             <div className="col-lg-8 col-md-8 col-sm-12">
                 <h6 className="text-uppercase">Lisätietoa</h6>

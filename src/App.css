@@ -12,6 +12,10 @@
     margin-left: 10px;
 }
 
+html {
+    height: 100%;
+}
+
 h1 {
     border-bottom: 4px solid #222;
     font-weight: 900;
@@ -19,6 +23,8 @@ h1 {
 
 body {
     font-family: Roboto, sans-serif;
+    min-height: 100%;
+    margin-bottom: 60px;
 }
 
 .row {
@@ -29,6 +35,8 @@ body {
     background-color: #222;
     color: #ccc;
     padding: 60px 0 30px;
+    position: fixed;
+    bottom: 0px;
 }
 
 .card {
