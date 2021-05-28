@@ -11,7 +11,7 @@ function App() {
         <div className="App">
             <Header></Header>
             <div className="row">
-                <div className="col-md-4 border-right">
+                <div className="col-md-4">
                     <Form/>
                 </div>
                 <div className="col-md-8">
