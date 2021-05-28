@@ -14,36 +14,35 @@ class Form extends React.Component {
             ...this.state, 
             [event.target.name]: value
         });
-        console.log(event.target.value);
+        console.log(event.target.name + ":" + event.target.value);
     }
 
     render() {
         return (
             <form>
                 <div className="form-group" onChange={this.handleChange}>
+
                     <div className="form-check-inline">
                         <input type="radio" value="A" name="car" /> A
                         <input type="radio" value="B" name="car" /> B
                         <input type="radio" value="C" name="car" /> C
-                    </div>
+                    </div><br/><br/>
+
                     <div>
-                        <label>
-                            Etäisyys:
-                            <input type="number" placeholder="km" id="distance" name="distance" min="0" value={this.state.distance} />
-                        </label>
-                    </div>
+                        <label>Etäisyys:</label>
+                        <input type="number" placeholder="km" id="distance" name="distance" min="0" />
+                    </div><br/>
+
                     <div>
-                        <label>
-                            Nopeus 1:
-                            <input type="number" placeholder="km/h" id="speed1" name="speed1" min="0" value={this.state.speed1}/>
-                        </label>
-                    </div>
+                        <label>Nopeus 1:</label>
+                        <input type="number" placeholder="km/h" id="speed1" name="speed1" min="0"/>
+                    </div><br/>
+
                     <div>
-                        <label>
-                            Nopeus 2:
-                            <input type="number" placeholder="km/h" id="speed2" name="speed2" min="0" value={this.state.speed2} />
-                        </label>
+                        <label>Nopeus 2:</label>    
+                        <input type="number" placeholder="km/h" id="speed2" name="speed2" min="0"/>
                     </div>
+                    
                 </div>
             </form>
         );
