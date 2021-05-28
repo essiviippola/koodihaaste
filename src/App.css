@@ -1,6 +1,6 @@
 .jumbotron {
     position: relative;
-    padding: 60px 0 30px 0;
+    padding: 100px 0 30px 0;
     background:#eee;
     text-align: center;
 }
@@ -11,7 +11,6 @@
     margin-right: 10px;
     margin-left: 10px;
 }
-
 
 html {
     height: 100%;
@@ -41,6 +40,7 @@ form {
     padding: 60px 0 30px;
     bottom: 0px;
     width: 100%;
+    position: flex;
 }
 
 .card {
@@ -53,4 +53,3 @@ form {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
