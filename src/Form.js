@@ -4,17 +4,22 @@ class Form extends React.Component {
     
     constructor(props) {
         super(props);
-        this.state = { value: "" };
+        this.state = {
+            car: "",
+            distance: "",
+            speed1: "",
+            speed2: ""
+        }
         this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange(event) {
         const value = event.target.value;
-        this.setState({ 
-            ...this.state, 
-            [event.target.name]: value
-        });
-        console.log(event.target.name + ":" + event.target.value);
+        this.setState(
+            {...this.state, [event.target.name]: value},
+            function(){
+                this.props.functionCallFromParent(this.state);
+            })
     }
 
     render() {
@@ -37,18 +42,18 @@ class Form extends React.Component {
                             <input type="number" className="form-control" id="distance" name="distance" min="0" />
                             <span className="input-group-text">km</span>
                         </div>
-                    </div><br/>
+                    </div>
 
                     <div>
-                        <label htmlFor="speed1">Nopeus 1</label>
+                        <label htmlFor="speed1">Nopeus</label>
                         <div className="input-group mb-3">
                             <input type="number" className="form-control" id="speed1" name="speed1" min="0"/>
                             <span className="input-group-text">km/h</span>
                         </div>
-                    </div><br/>
+                    </div>
 
                     <div>
-                        <label htmlFor="speed2">Nopeus 2</label>
+                        <label htmlFor="speed2">Vertailtava nopeus</label>
                         <div className="input-group mb-3">
                         <input type="number" className="form-control" id="speed2" name="speed2" min="0"/>
                         <span className="input-group-text">km/h</span>
