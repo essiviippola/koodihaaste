@@ -12,13 +12,9 @@
     margin-left: 10px;
 }
 
+
 html {
     height: 100%;
-}
-
-h1 {
-    border-bottom: 4px solid #222;
-    font-weight: 900;
 }
 
 body {
@@ -45,6 +41,7 @@ form {
     padding: 60px 0 30px;
     position: fixed;
     bottom: 0px;
+    width: 100%;
 }
 
 .card {
