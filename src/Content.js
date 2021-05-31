@@ -1,12 +1,14 @@
 import React from "react";
 
-let car = this.props.valueFromParent.car;
-let distance = this.props.valueFromParent.distance;
-let speed1 = this.props.valueFromParent.speed1;
-let speed2 = this.props.valueFromParent.speed2;
-
 class Content extends React.Component {
+
     render() {
+
+        const car = this.props.valueFromParent.car;
+        const distance = this.props.valueFromParent.distance;
+        const speed1 = this.props.valueFromParent.speed1;
+        const speed2 = this.props.valueFromParent.speed2;
+        
         return (
             <div id="content" className="row">
                 <div className="col-md-4">
