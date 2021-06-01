@@ -5,11 +5,6 @@ html, body {
     height: 100%;
 }
 
-.inline-option {
-    margin-left: -11px;
-    padding-right: 13px;
-}
-
 #container {
     width: 100%;
     min-height: 100%;
