@@ -27,17 +27,17 @@ class Form extends React.Component {
             <form>
                 <div className="form-group" onChange={this.handleChange}>
 
-                    <div class="form-check form-check-inline">
+                    <div className="form-check form-check-inline">
                         <input type="radio" value="A" name="car" id="car-a" className="form-check-input"/>
-                        <label class="form-check-label" htmlFor="car-a">Auto A</label>
+                        <label className="form-check-label" htmlFor="car-a">Auto A</label>
                     </div>
-                    <div class="form-check form-check-inline">
+                    <div className="form-check form-check-inline">
                     <input type="radio" value="B" name="car" id="car-b" className="form-check-input"/>
-                        <label class="form-check-label" htmlFor="car-b">Auto B</label>
+                        <label className="form-check-label" htmlFor="car-b">Auto B</label>
                     </div>
-                    <div class="form-check form-check-inline">
+                    <div className="form-check form-check-inline">
                     <input type="radio" value="C" name="car" id="car-c" className="form-check-input"/>
-                        <label class="form-check-label" htmlFor="car-c">Auto C</label>
+                        <label className="form-check-label" htmlFor="car-c">Auto C</label>
                     </div><br/>
 
                     <div>
