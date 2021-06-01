@@ -29,11 +29,11 @@ class Form extends React.Component {
 
                     <div>
                         <input type="radio" value="A" name="car" id="car-a" className="form-check-inline"/>
-                        <label htmlFor="car-a">Auto A</label>
+                        <label htmlFor="car-a" className="inline-option">Auto A</label>
                         <input type="radio" value="B" name="car" id="car-b" className="form-check-inline"/> 
-                        <label htmlFor="car-b">Auto B</label>
+                        <label htmlFor="car-b" className="inline-option">Auto B</label>
                         <input type="radio" value="C" name="car" id="car-c" className="form-check-inline"/>
-                        <label htmlFor="car-c">Auto C</label>
+                        <label htmlFor="car-c" className="inline-option">Auto C</label>
                     </div><br/>
 
                     <div>
