@@ -3,7 +3,7 @@ export function calculateConsumption(car, distance, speed, format = true) {
     if (car && distance && speed) {
         const consumptionDict = { "A": 3.0, "B": 3.5, "C": 4.0 };
         const consumptionPer100km = consumptionDict[car];
-        consumption = 1.009 ** (speed - 1) * consumptionPer100km;
+        consumption = distance / 100 * 1.009 ** (speed - 1) * consumptionPer100km;
         if(format){
             consumption = formatConsumption(consumption);
         }
