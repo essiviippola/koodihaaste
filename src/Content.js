@@ -1,4 +1,5 @@
 import React from "react";
+import {calculateConsumption, calculateConsumptionDifference, calculateTime, calculateTimeDifference} from "./Utils.js";
 
 class Content extends React.Component {
 
@@ -12,23 +13,31 @@ class Content extends React.Component {
         return (
             <div id="content" className="row">
                 <div className="col-md-4">
-                    <div className="card">
+                    <div>
                         <h2>Kulutus</h2>
-                        <p>Car: {car}</p>
+                        <p>Kulutus: {calculateConsumption(car, distance, speed1)}</p>
+                        <p>Vertailtava kulutus: {calculateConsumption(car, distance, speed2)}</p>
+                        <p>Ero kulutuksessa: {calculateConsumptionDifference(car, distance, speed1, speed2)}</p>
                     </div>
-                    <div className="card">
+                    <div>
                         <h2>Päästöt</h2>
-                        <p>Distance: {distance}</p>
+                        <p>Päästöt: </p>
+                        <p>Vertailtavat päästöt: </p>
+                        <p>Erotus päästöissä: </p>
                     </div>
                 </div>
                 <div className="col-md-4">
-                    <div className="card">
+                    <div>
                         <h2>Nopeus</h2>
-                        <p>Speed 1: {speed1}</p>
+                        <p>Nopeus: {calculateTime(distance, speed1)}</p>
+                        <p>Vertailtava nopeus: {calculateTime(distance, speed2)}</p>
+                        <p>Erotus nopeudessa: {calculateTimeDifference(distance, speed1, speed2)}</p>
                     </div>
-                    <div className="card">
+                    <div>
                         <h2>Hinta</h2>
-                        <p>Speed2: {speed2}</p>
+                        <p>Hinta: </p>
+                        <p>Vertailtava hinta: </p>
+                        <p>Erotus hinnoissa: </p>
                     </div>
                 </div>
             </div>

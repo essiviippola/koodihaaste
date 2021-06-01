@@ -1,12 +1,3 @@
-let form = document.querySelector("#myform");
-
-let selectedCar;
-let selectedDistance;
-let selectedSpeed1;
-let selectedSpeed2;
-
-const consumptionDict = { "A": 3.0, "B": 3.5, "C": 4.0 };
-
 function convertTimeFormat(hours) {
     const rhours = Math.floor(hours);
     const minutes = (hours - rhours) * 60;
@@ -18,57 +9,30 @@ function convertTimeFormat(hours) {
     }
 }
 
-form.addEventListener("change", function (e) {
-    // console.log("Something changed!")
+// to-do: why is distance not used?
+export function calculateConsumption(car, distance, speed){
+    const consumptionDict = { "A": 3.0, "B": 3.5, "C": 4.0 };
+    const consumptionPer100km = consumptionDict[car];
+    const consumption = 1.009 ** (speed-1) * consumptionPer100km;
+    return(consumption)
+}
 
-    const rbs = document.querySelectorAll("input[name='car-type'")
-    for (const rb of rbs) {
-        if (rb.checked) {
-            selectedCar = rb.value;
-            break;
-        }
-    }
-
-    selectedDistance = document.querySelector("#distance").value;
-    selectedSpeed1 = document.querySelector("#speed1").value;
-    selectedSpeed2 = document.querySelector("#speed2").value;
-
-    if (selectedCar && selectedDistance && selectedSpeed1 && selectedSpeed2) {
-
-        let msg = [];
-        let time1 = selectedDistance / selectedSpeed1;
-        let time2 = selectedDistance / selectedSpeed2;
-        let timeDiff = Math.abs(time1 - time2);
-        let consumption = consumptionDict[selectedCar];
-        // Calculates the consumption (l/100 km) for both speeds.
-        let consumption1 = 1.009 ** (selectedSpeed1 - 1) * consumption;
-        let consumption2 = 1.009 ** (selectedSpeed2 - 1) * consumption;
-        // Calculates total consumption (l) for the selected distances for both speeds and rounds it to two decimals places.
-        let tot_consumption1 = selectedDistance / 100 * consumption1;
-        let tot_consumption2 = selectedDistance / 100 * consumption2;
-        let consumptionDiff = Math.abs(tot_consumption1 - tot_consumption2);
+export function calculateConsumptionDifference(car, distance, speed1, speed2){
+    const consumption1 = calculateConsumption(car, distance, speed1);
+    const consumption2 = calculateConsumption(car, distance, speed2);
+    const consumptionDifference = consumption1 - consumption2;
+    return(consumptionDifference)
+}
 
 
-        msg.push("Nopeudella " + selectedSpeed1 + " km/h aikaa kuluu " + convertTimeFormat(time1));
-        msg.push("Tällä nopeudella polttoainekulutus on " + tot_consumption1.toFixed(2) + " litraa. <br/>");
-        msg.push("Nopeudella " + selectedSpeed2 + " km/h aikaa kuluu " + convertTimeFormat(time2));
-        msg.push("Tällä nopeudella polttoainekulutus on " + tot_consumption2.toFixed(2) + " litraa. <br/>");
+export function calculateTime(distance, speed){
+    const time = distance / speed;
+    return(time)
+}
 
-        msg.push("Kulutus kasvaisi " + consumptionDiff.toFixed(2) + " litraa ja aikaa säästyisi " + convertTimeFormat(timeDiff));
-        //msg.push("Consumption1: " + consumption1 + " l");
-        //msg.push("Consumption2: " + consumption2 + " l");
-
-        msg = msg.join("<br/>");
-
-        document.getElementById("test").innerHTML = msg
-
-    }
-
-});
-
-window.addEventListener("orientationchange", function (e) {
-    let screen = window.screen;
-    let angle = screen.orientation.angle;
-    let type = screen.orientation.type;
-    console.log(`ange: ${angle}, type: ${type}`);
-});
+export function calculateTimeDifference(distance, speed1, speed2){
+    const time1 = calculateTime(distance, speed1);
+    const time2 = calculateTime(distance, speed2);
+    const timeDifference = time1 - time2;
+    return(timeDifference)
+}
