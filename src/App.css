@@ -5,6 +5,16 @@ html, body {
     height: 100%;
 }
 
+h1 {
+    border-bottom: 3px solid black;
+    margin-left: 0px;
+}
+
+form {
+    padding-right: 20px;
+    border-right: 1px solid rgb(207, 207, 207);
+}
+
 #container {
     width: 100%;
     min-height: 100%;
@@ -19,7 +29,9 @@ html, body {
 
 #body {
     padding: 20px 40px 40px 40px;
-    padding-bottom: 250px; /* Footer height */
+
+    /* Footer height */
+    padding-bottom: 250px; 
     display: flex;
     overflow: auto;
 }
