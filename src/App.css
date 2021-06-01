@@ -11,10 +11,12 @@ header {
 }
 
 .jumbotron {
-    padding-top: 60px;
+    padding-top: 100px;
     background: #eee;
     text-align: center;
-    height: 200px;
+    height: 300px;
+    background-image: url(https://source.unsplash.com/rYrawNU0wH0/1200x600);
+    background-size: cover;
 }
 
 /* Content */
@@ -62,15 +64,17 @@ form {
   }
 
 .car-line {
-    width: 85%;
+    width: 75%;
     position: relative;
     margin: 10px;
-    border-bottom: 2px solid;
+    border-bottom: 2px dashed;
+    color: rgb(238, 144, 12);
 }
 
 .car-icon {
     position: relative;
     top: 3px;
+    color: rgb(238, 144, 12);
 }
 
 /* Something */
