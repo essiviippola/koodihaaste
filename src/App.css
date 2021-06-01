@@ -41,7 +41,7 @@ form {
 #body {
     padding: 20px 40px 40px 40px;
     /* Footer height */
-    padding-bottom: 250px; 
+    padding-bottom: 200px; 
     display: flex;
     overflow: auto;
 }
