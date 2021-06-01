@@ -5,15 +5,22 @@ html, body {
     height: 100%;
 }
 
+/* header */
 header {
     color: white;
     padding-bottom: 50px;
 }
 
+.jumbotron {
+    padding: 30px 50px 10px 50px;
+    background: #eee;
+    text-align: center;
+}
 
+/* Content */
 form {
     padding-right: 20px;
-    border-right: 1px solid rgb(207, 207, 207);
+    /* border-right: 1px solid rgb(207, 207, 207); */
 }
 
 .input-group-text {
@@ -29,12 +36,6 @@ form {
     width: 100%;
     min-height: 100%;
     position: relative;
-}
-
-.jumbotron {
-    padding: 30px 50px 10px 50px;
-    background: #eee;
-    text-align: center;
 }
 
 #body {
@@ -54,25 +55,25 @@ form {
     box-shadow: 0 50vh 0 50vh rgb(58, 58, 58);;
 }
 
+/* Car icon */
 .car-icon-line {
     display: flex;
-    position: absolute;
-    bottom: 250px;
+    position: relative;
   }
 
-  .car-line {
-    width: 80%;
+.car-line {
+    width: 85%;
     position: relative;
-    margin: 15px;
-    border-bottom: 2px solid rgb(85, 85, 85);
+    margin: 10px;
+    border-bottom: 2px solid;
 }
 
 .car-icon {
     position: relative;
     top: 3px;
-    color: rgb(85, 85, 85);
 }
 
+/* Something */
 *, *::before, *::after {
     box-sizing: border-box;
 }
