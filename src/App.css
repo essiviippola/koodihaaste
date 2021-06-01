@@ -48,6 +48,25 @@ form {
     box-shadow: 0 50vh 0 50vh #222;
 }
 
+.car-icon-line {
+    display: flex;
+    position: absolute;
+    bottom: 250px;
+  }
+
+  .car-line {
+    width: 80%;
+    position: relative;
+    margin: 15px;
+    border-bottom: 2px solid rgb(85, 85, 85);
+}
+
+.car-icon {
+    position: relative;
+    top: 3px;
+    color: rgb(85, 85, 85);
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }

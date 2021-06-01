@@ -30,6 +30,10 @@ class App extends Component {
                         <div id="content" className="col-md-8">
                             <Content valueFromParent={this.state.key} />
                         </div>
+                        <div className="car-icon-line">
+                            <div className="car-line"></div>
+                            <div className="car-icon"><i className="fas fa-car-side fa-2x"></i></div>
+                        </div>
                     </div>
                     <Footer />
                 </div>
