@@ -13,32 +13,32 @@ class Content extends React.Component {
         return (
             <div id="content">
                 <div className="row">
-                        <div className="col">
-                            <h2>Kulutus</h2>
-                            <p>Kulutus: {calculateConsumption(car, distance, speed1)}</p>
-                            <p>Vertailtava kulutus: {calculateConsumption(car, distance, speed2)}</p>
-                            <p>Ero kulutuksessa: {calculateConsumptionDifference(car, distance, speed1, speed2)}</p>
-                        </div>
-                        <div className="col">
-                            <h2>Päästöt</h2>
-                            <p>Päästöt: </p>
-                            <p>Vertailtavat päästöt: </p>
-                            <p>Erotus päästöissä: </p>
-                        </div>
+                    <div className="col">
+                        <h2>Kulutus</h2>
+                        <p>Kulutus: {calculateConsumption(car, distance, speed1)}</p>
+                        <p>Vertailtava kulutus: {calculateConsumption(car, distance, speed2)}</p>
+                        <p>Ero kulutuksessa: {calculateConsumptionDifference(car, distance, speed1, speed2)}</p>
+                    </div>
+                    <div className="col">
+                        <h2>Nopeus</h2>
+                        <p>Nopeus: {calculateTime(distance, speed1)}</p>
+                        <p>Vertailtava nopeus: {calculateTime(distance, speed2)}</p>
+                        <p>Erotus nopeudessa: {calculateTimeDifference(distance, speed1, speed2)}</p>
+                    </div>
                 </div>
                 <div className="row">
-                        <div className="col">
-                            <h2>Nopeus</h2>
-                            <p>Nopeus: {calculateTime(distance, speed1)}</p>
-                            <p>Vertailtava nopeus: {calculateTime(distance, speed2)}</p>
-                            <p>Erotus nopeudessa: {calculateTimeDifference(distance, speed1, speed2)}</p>
-                        </div>
-                        <div className="col">
-                            <h2>Hinta</h2>
-                            <p>Hinta: </p>
-                            <p>Vertailtava hinta: </p>
-                            <p>Erotus hinnoissa: </p>
-                        </div>
+                    <div className="col">
+                        <h2>Päästöt</h2>
+                        <p>Päästöt: </p>
+                        <p>Vertailtavat päästöt: </p>
+                        <p>Erotus päästöissä: </p>
+                    </div>
+                    <div className="col">
+                        <h2>Hinta</h2>
+                        <p>Hinta: </p>
+                        <p>Vertailtava hinta: </p>
+                        <p>Erotus hinnoissa: </p>
+                    </div>
                 </div>
             </div>
         );
