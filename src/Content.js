@@ -20,10 +20,10 @@ class Content extends React.Component {
                         <p>Ero kulutuksessa: {calculateConsumptionDifference(car, distance, speed1, speed2)}</p>
                     </div>
                     <div className="col">
-                        <h2>Nopeus</h2>
-                        <p>Nopeus: {calculateTime(distance, speed1)}</p>
-                        <p>Vertailtava nopeus: {calculateTime(distance, speed2)}</p>
-                        <p>Erotus nopeudessa: {calculateTimeDifference(distance, speed1, speed2)}</p>
+                        <h2>Aika</h2>
+                        <p>Aika: {calculateTime(distance, speed1)}</p>
+                        <p>Vertailtava aika: {calculateTime(distance, speed2)}</p>
+                        <p>Ero ajassa: {calculateTimeDifference(distance, speed1, speed2)}</p>
                     </div>
                 </div>
             </div>
