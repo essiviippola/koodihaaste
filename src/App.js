@@ -8,29 +8,31 @@ import Footer from "./Footer"
 
 class App extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state={key:""};
+        this.state = { key: "" };
     }
 
     // todo: rename functions and parameters
     parentFunction = (data_from_child) => {
-        this.setState({key:data_from_child});
+        this.setState({ key: data_from_child });
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <div className="App">
-                <Header/>
-                <div className="row">
-                    <div className="col-md-4">
-                        <Form functionCallFromParent={this.parentFunction.bind(this)}/>
+                <div id="container">
+                    <Header />
+                    <div id="body" className="row">
+                        <div id="form" className="col-md-4">
+                            <Form functionCallFromParent={this.parentFunction.bind(this)} />
+                        </div>
+                        <div id="content" className="col-md-8">
+                            <Content valueFromParent={this.state.key} />
+                        </div>
                     </div>
-                    <div className="col-md-8">
-                        <Content valueFromParent={this.state.key}/>
-                    </div>
+                    <Footer />
                 </div>
-                <Footer/>
             </div>
         );
     }
