@@ -10,13 +10,15 @@ header {
     padding-bottom: 50px;
 }
 
-h1 {
-    text-emphasis-style: bold;
-}
 
 form {
     padding-right: 20px;
     border-right: 1px solid rgb(207, 207, 207);
+}
+
+.input-group-text {
+    width: 25%;
+    justify-content: center;
 }
 
 .form-check-label {
