@@ -26,20 +26,6 @@ class Content extends React.Component {
                         <p>Erotus nopeudessa: {calculateTimeDifference(distance, speed1, speed2)}</p>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col">
-                        <h2>Päästöt</h2>
-                        <p>Päästöt: </p>
-                        <p>Vertailtavat päästöt: </p>
-                        <p>Erotus päästöissä: </p>
-                    </div>
-                    <div className="col">
-                        <h2>Hinta</h2>
-                        <p>Hinta: </p>
-                        <p>Vertailtava hinta: </p>
-                        <p>Erotus hinnoissa: </p>
-                    </div>
-                </div>
             </div>
         );
     }
