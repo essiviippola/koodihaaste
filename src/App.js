@@ -23,6 +23,7 @@ class App extends Component {
             <div className="App">
                 <div id="container">
                     <Header />
+                    {/* Body */}
                     <div id="body" className="row">
                         <div id="form" className="col-md-4">
                             <Form functionCallFromParent={this.parentFunction.bind(this)} />
@@ -30,10 +31,12 @@ class App extends Component {
                         <div id="content" className="col-md-8">
                             <Content valueFromParent={this.state.key} />
                         </div>
-                        <div className="car-icon-line">
-                            <div className="car-line"></div>
-                            <div className="car-icon"><i className="fas fa-car-side fa-2x"></i></div>
-                        </div>
+                    </div>
+
+                    {/* Car icon */}
+                    <div className="car-icon-line">
+                        <div className="car-line"></div>
+                        <div className="car-icon"><i className="fas fa-car-side fa-2x"></i></div>
                     </div>
                     <Footer />
                 </div>
