@@ -5,14 +5,20 @@ html, body {
     height: 100%;
 }
 
-h1 {
-    border-bottom: 3px solid black;
-    margin-left: 0px;
+header {
+    color: white;
+    padding-bottom: 50px;
 }
+
 
 form {
     padding-right: 20px;
     border-right: 1px solid rgb(207, 207, 207);
+}
+
+.input-group-text {
+    width: 25%;
+    justify-content: center;
 }
 
 .form-check-label {
@@ -27,13 +33,12 @@ form {
 
 .jumbotron {
     padding: 30px 50px 10px 50px;
-    background:#eee;
+    background: #eee;
     text-align: center;
 }
 
 #body {
     padding: 20px 40px 40px 40px;
-
     /* Footer height */
     padding-bottom: 250px; 
     display: flex;
@@ -43,9 +48,10 @@ form {
 .page-footer {
     width: 100%;
     padding: 30px 30px 0px;
-    background-color: #222;
-    color: #ccc;
-    box-shadow: 0 50vh 0 50vh #222;
+    background-color: rgb(58, 58, 58);
+    /* color: #ccc; */
+    color: white;
+    box-shadow: 0 50vh 0 50vh rgb(58, 58, 58);;
 }
 
 .car-icon-line {
