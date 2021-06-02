@@ -17,13 +17,13 @@
     /* TESTING */
     /* Used color palette: https://colorhunt.co/palette/281238 */
     --header_color_text: white;
-    --header_color_bg: #fb9300;
+    --header_color_bg: #91c788;
 
-    --body_color_bg: #f5e6ca;
+    --body_color_bg: #feffde;
 
-    --car_color: #183749;
+    --car_color: #132c33;
 
-    --footer_color: #f54748;
+    --footer_color: #52734d;
 
 }
 
