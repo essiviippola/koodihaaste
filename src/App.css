@@ -15,7 +15,7 @@
     --content_padding: 30px 15% 0px 15%;
 
     /* TESTING */
-    /* Used color palette: https://colorhunt.co/palette/281238 */
+    /* Used color palette: https://colorhunt.co/palette/264587 */
     --header_color_text: white;
     --header_color_bg: #91c788;
 
@@ -35,19 +35,25 @@ html, body {
     font-family: "Roboto", sans-serif;
 }
 
+.icon-over-input {
+    padding-left: 5px;
+    font-size: large;
+}
+
+.icon-h2 {
+    padding-left: 5px;
+    font-size: 20pt;
+}
+
 /* Header */
-h1 {
-    font-weight: 900;
-    font-family: "Roboto", sans-serif;
-}
-
-h2 {
-    font-weight: 500;
-}
-
 header {
     color: var(--header_color_text);
     padding: var(--content_padding);
+}
+
+h1 {
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
 }
 
 .jumbotron {
@@ -73,6 +79,10 @@ form {
 
 .radio-buttons {
     padding-bottom: 20px;
+}
+
+h2 {
+    font-weight: 500;
 }
 
 #container {

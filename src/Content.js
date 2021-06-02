@@ -14,13 +14,13 @@ class Content extends React.Component {
             <div id="content">
                 <div className="row">
                     <div className="col">
-                        <h2>Kulutus</h2>
+                        <h2>Kulutus <span class="icon-h2"><i className="fas fa-charging-station"></i></span></h2>
                         <p>Kulutus: {calculateConsumption(car, distance, speed1)}</p>
                         <p>Vertailtava kulutus: {calculateConsumption(car, distance, speed2)}</p>
                         <p>Ero kulutuksessa: {calculateConsumptionDifference(car, distance, speed1, speed2)}</p>
                     </div>
                     <div className="col">
-                        <h2>Aika</h2>
+                        <h2>Aika <span class="icon-h2"><i className="far fa-clock"></i></span></h2>
                         <p>Aika: {calculateTime(distance, speed1)}</p>
                         <p>Vertailtava aika: {calculateTime(distance, speed2)}</p>
                         <p>Ero ajassa: {calculateTimeDifference(distance, speed1, speed2)}</p>

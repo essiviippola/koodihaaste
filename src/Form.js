@@ -42,7 +42,7 @@ class Form extends React.Component {
                     </div>
 
                     <div>
-                        <label htmlFor="distance">Matka mökille</label>
+                        <label htmlFor="distance">Matka mökille<span className="icon-over-input"><i className="fas fa-home"></i></span></label>
                         <div className="input-group mb-3">
                             <input type="number" className="form-control" id="distance" name="distance" min="0" />
                             <span className="input-group-text">km</span>
@@ -50,7 +50,7 @@ class Form extends React.Component {
                     </div>
 
                     <div>
-                        <label htmlFor="speed1">Nopeus</label>
+                        <label htmlFor="speed1">Nopeus<span className="icon-over-input"><i className="fas fa-tachometer-alt"></i></span></label>
                         <div className="input-group mb-3">
                             <input type="number" className="form-control" id="speed1" name="speed1" min="0" />
                             <span className="input-group-text">km/h</span>
@@ -58,7 +58,7 @@ class Form extends React.Component {
                     </div>
 
                     <div>
-                        <label htmlFor="speed2">Vertailtava nopeus</label>
+                        <label htmlFor="speed2">Vertailtava nopeus<span className="icon-over-input"><i className="fas fa-tachometer-alt"></i></span></label>
                         <div className="input-group mb-3">
                             <input type="number" className="form-control" id="speed2" name="speed2" min="0" />
                             <span className="input-group-text">km/h</span>
