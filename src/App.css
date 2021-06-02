@@ -33,7 +33,6 @@ html, body {
     padding: 0; 
     height: 100%;
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
 }
 
 /* Header */
@@ -70,7 +69,6 @@ form {
     width: 60px;
     justify-content: center;
     color: black;
-    font-weight: 300;
 }
 
 .radio-buttons {
