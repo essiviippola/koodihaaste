@@ -42,7 +42,7 @@ class Form extends React.Component {
                     </div>
 
                     <div>
-                        <label htmlFor="distance">Etäisyys</label>
+                        <label htmlFor="distance">Matka mökille</label>
                         <div className="input-group mb-3">
                             <input type="number" className="form-control" id="distance" name="distance" min="0" />
                             <span className="input-group-text">km</span>
