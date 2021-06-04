@@ -47,8 +47,7 @@ export function calculateTimeDifference(distance, speed1, speed2) {
 
 function formatConsumption(consumption){
     consumption = consumption.toFixed(2);
-    const literSuffix = (consumption === 1 ? "litra" : "litraa");
-    const result = consumption + " " + literSuffix;
+    const result = consumption + " l ";
     return(result);
 }
 
@@ -60,12 +59,10 @@ function formatTime(hours) {
     const roundedMinutes = Math.round(minutes);
 
     if (roundedHours > 0) {
-        const hourSuffix = (roundedHours === 1 ? "tunti" : "tuntia");
-        result += roundedHours + " " + hourSuffix + " ";
+        result += roundedHours + " h ";
     }
     if (roundedMinutes > 0) {
-        const minuteSuffix = (roundedMinutes === 1 ? "minuutti" : "minuuttia");
-        result += roundedMinutes + " " + minuteSuffix;
+        result += roundedMinutes + " min ";
     }
     return (result)
 }
