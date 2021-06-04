@@ -1,29 +1,13 @@
-/* Color palettes */
-
 :root {
     /* COLORS */
-    --header_color_text: black;
-    --header_color_bg: #eeeeee;
-
-    --body_color_bg: #fff5eb;
-
-    --car_color: rgb(238, 144, 12);
-
-    --footer_color: rgb(58, 58, 58);
+    /* Used color palette: https://colorhunt.co/palette/264587 */
+    --color1: #feffde;
+    --color2: #ddffbc;
+    --color3: #91c788;
+    --color4: #52734d;
 
     /* PADDING */
     --content_padding: 30px 15% 0px 15%;
-
-    /* TESTING */
-    /* Used color palette: https://colorhunt.co/palette/264587 */
-    --header_color_text: black;
-    --header_color_bg: #91c788;
-
-    --body_color_bg: #feffde;
-
-    --car_color: #132c33;
-
-    --footer_color: #52734d;
 
 }
 
@@ -45,9 +29,8 @@ html, body {
     font-size: 20pt;
 }
 
-/* Header */
 header {
-    color: var(--header_color_text);
+    color: var(--color3);
     padding: var(--content_padding);
 }
 
@@ -56,19 +39,19 @@ h1 {
     font-family: "Roboto", sans-serif;
 }
 
-.jumbotron {
-    padding-top: 100px;
-    background: var(--header_color_bg);
-    text-align: center;
-    height: 250px;
-    /* background-image: url(https://source.unsplash.com/rYrawNU0wH0/1200x600); */
-    /* background-size: cover; */
+h2 {
+    font-weight: 500;
 }
 
-/* Content */
+.jumbotron {
+    padding-top: 100px;
+    background: var(--color2);
+    text-align: center;
+    height: 250px;
+}
+
 form {
     padding-right: 20px;
-    /* border-right: 1px solid rgb(207, 207, 207); */
 }
 
 .input-group-text {
@@ -81,10 +64,6 @@ form {
     padding-bottom: 20px;
 }
 
-h2 {
-    font-weight: 500;
-}
-
 #container {
     width: 100%;
     min-height: 100%;
@@ -95,23 +74,21 @@ h2 {
     padding: 20px 15% 200px 15%;
     display: flex;
     overflow: auto;
-    background-color: var(--body_color_bg);
+    background-color: var(--color1);
 }
 
 .page-footer {
     width: 100%;
     padding: var(--content_padding);
-    background-color: var(--footer_color);
-    /* color: #ccc; */
+    background-color: var(--color3);
     color: white;
-    box-shadow: 0 50vh 0 50vh var(--footer_color);
+    box-shadow: 0 50vh 0 50vh var(--color3);
 }
 
-/* Car icon */
 .car-icon-line {
     display: flex;
     position: relative;
-    background-color: var(--body_color_bg);
+    background-color: var(--color1);
   }
 
 .car-line {
@@ -119,16 +96,15 @@ h2 {
     position: relative;
     margin: 10px;
     border-bottom: 2px dashed;
-    color: var(--car_color);
+    color: var(--color4);
 }
 
 .car-icon {
     position: relative;
     top: 3px;
-    color: var(--car_color);
+    color: var(--color4);
 }
 
-/* Something */
 *, *::before, *::after {
     box-sizing: border-box;
 }
