@@ -1,10 +1,16 @@
 :root {
     /* COLORS */
     /* Used color palette: https://colorhunt.co/palette/264587 */
-    --color1: #feffde;
+    /* --color1: #feffde;
     --color2: #ddffbc;
     --color3: #91c788;
-    --color4: #52734d;
+    --color4: #52734d; */
+    
+    /* Color palette: https://colorhunt.co/palette/252800 */
+    --color1: #f8f1f1;
+    --color2: #a3d2ca;
+    --color3: #5eaaa8;
+    --color4: #eb5e0b;
 
     /* PADDING */
     --content_padding: 30px 15% 0px 15%;
@@ -17,11 +23,7 @@ html, body {
     padding: 0; 
     height: 100%;
     font-family: "Roboto", sans-serif;
-}
-
-.icon-over-input {
-    padding-left: 5px;
-    font-size: large;
+    color: var(--color3);
 }
 
 .icon-h2 {
@@ -32,11 +34,7 @@ html, body {
 header {
     color: var(--color3);
     padding: var(--content_padding);
-}
-
-h1 {
-    font-weight: 900;
-    font-family: "Roboto", sans-serif;
+    font-size: 21px;
 }
 
 h2 {
@@ -47,7 +45,7 @@ h2 {
     padding-top: 100px;
     background: var(--color2);
     text-align: center;
-    height: 250px;
+    height: 300px;
 }
 
 form {
@@ -57,7 +55,9 @@ form {
 .input-group-text {
     width: 60px;
     justify-content: center;
-    color: black;
+    background-color: var(--color3);
+    color: white;
+    border: none;
 }
 
 .radio-buttons {
@@ -71,18 +71,10 @@ form {
 }
 
 #body {
-    padding: 20px 15% 200px 15%;
+    padding: 10%;
     display: flex;
     overflow: auto;
     background-color: var(--color1);
-}
-
-.page-footer {
-    width: 100%;
-    padding: var(--content_padding);
-    background-color: var(--color3);
-    color: white;
-    box-shadow: 0 50vh 0 50vh var(--color3);
 }
 
 .car-icon-line {
@@ -96,13 +88,21 @@ form {
     position: relative;
     margin: 10px;
     border-bottom: 2px dashed;
-    color: var(--color4);
+    color: var(--color2);
 }
 
 .car-icon {
     position: relative;
     top: 3px;
     color: var(--color4);
+}
+
+.page-footer {
+    width: 100%;
+    padding: var(--content_padding);
+    background-color: var(--color3);
+    color: white;
+    box-shadow: 0 50vh 0 50vh var(--color3);
 }
 
 *, *::before, *::after {
