@@ -59,7 +59,7 @@ class Form extends React.Component {
                     </div>
 
                     <div>
-                        <label htmlFor="speed2">Mihin nopeuteen verrataan?</label>
+                        <label htmlFor="speed2">Mihin nopeuteen haluat verrata?</label>
                         <div className="input-group mb-3">
                             <input type="number" className="form-control" id="speed2" name="speed2" min="0" />
                             <span className="input-group-text">km/h</span>
