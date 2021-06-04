@@ -20,22 +20,26 @@ class Content extends React.Component {
 
         return (
             <div id="content">
-                <div className="row">
-                    <div className="col">
-                        <h2><span class="icon-h2"><i className="fas fa-charging-station"></i></span> Kulutus</h2>
-                        <p>Ero kulutuksessa:</p>
-                        <h3>{consumptionDifference}</h3>
-                        <p>Kulutus: {consumption1}</p>
-                        <p>Vertailtava kulutus: {consumption2}</p>
-                    </div>
-                    <div className="col">
-                        <h2><span class="icon-h2"><i className="far fa-clock"></i></span> Aika</h2>
-                        <p>Ero ajassa:</p>
-                        <h3>{timeDifference}</h3>
-                        <p>Aika: {time1}</p>
-                        <p>Vertailtava aika: {time2}</p>
-                    </div>
+                <hr/>
+                <div>
+                    <h3>
+                    Ajamalla {speed1} km/h sijaan {speed2} km/h, 
+                    matkassa kestää 
+                    <span> {timeDifference} </span>
+                    kauemmin ja polttoainetta kuluu 
+                    <span> {consumptionDifference} </span>
+                    vähemmän. 
+                    </h3>
                 </div>
+                <hr/>
+                <div>
+                    <p>Aika valitulla nopeudella: {time1}</p>
+                    <p>Aika vertailunopeudella: {time2}</p>
+                    <br/>
+                    <p>Kulutus valitulla nopeudella: {consumption1}</p>
+                    <p>Kulutus vertailunopeudella: {consumption2}</p>
+                </div>
+
             </div>
         );
     }
