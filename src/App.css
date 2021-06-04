@@ -52,6 +52,10 @@ form {
     padding-right: 20px;
 }
 
+.form-check-label{
+    font-size: 18px;
+}
+
 .input-group-text {
     width: 60px;
     justify-content: center;
