@@ -24,7 +24,7 @@ class Form extends React.Component {
 
     render() {
         return (
-            <form>
+            <form className="card-body">
                 <div className="form-group" onChange={this.handleChange}>
                     <label className="form-check-label" htmlFor="radio-buttons">Millä autolla ajat?</label>
                     <div className="radio-buttons">

@@ -25,7 +25,7 @@ class App extends Component {
                     <Header />
                     {/* Body */}
                     <div id="body" className="row">
-                        <div id="form" className="col-md-4">
+                        <div id="form" className="col-md-4 card">
                             <Form functionCallFromParent={this.parentFunction.bind(this)} />
                         </div>
                         <div id="content" className="col-md-8">
