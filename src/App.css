@@ -71,6 +71,10 @@ form {
     position: relative;
 }
 
+.emphasize {
+    color: var(--color5);
+}
+
 #body {
     padding: 10%;
     display: flex;
