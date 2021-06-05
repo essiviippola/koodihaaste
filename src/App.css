@@ -80,7 +80,7 @@ form {
 }
 
 #body {
-    padding: 10%;
+    padding: 100px;
     display: flex;
     overflow: auto;
     background-color: var(--color1);
