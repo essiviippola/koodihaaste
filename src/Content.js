@@ -22,19 +22,19 @@ class Content extends React.Component {
         const fasterSpeed = Math.max(speed1, speed2);
 
         return (
-            <div id="content">
+            <section id="content">
                 {timeDifference && consumptionDifference ?
                     <div>
-                        <hr/>
-                        <h2>
+                        <hr />
+                        <p className="h2">
                             Ajamalla {fasterSpeed} km/h sijaan {slowerSpeed} km/h,
                             matkassa kestää
                             <span className="emphasize"> {timeDifference} </span>
                             kauemmin ja polttoainetta kuluu
                             <span className="emphasize"> {consumptionDifference} </span>
                             vähemmän.
-                        </h2>
-                        <hr/>
+                            </p>
+                        <hr />
                     </div>
                     : null}
                 <div className="row">
@@ -48,7 +48,7 @@ class Content extends React.Component {
                     </div>
                 </div>
 
-            </div>
+            </section>
         );
     }
 }
