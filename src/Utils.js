@@ -47,6 +47,7 @@ export function calculateTimeDifference(distance, speed1, speed2) {
 
 function formatConsumption(consumption) {
     consumption = consumption.toFixed(2);
+    consumption = Math.abs(consumption);
     const result = consumption + " l ";
     return(result);
 }
