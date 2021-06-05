@@ -38,11 +38,11 @@ class Content extends React.Component {
                 <div className="row">
                     <div className="col">
                         {time1 ? <p>Aika nopeudella {speed1} km/h: <strong>{time1}</strong></p> : null}
-                        {time2 && (time1 != time2) ? <p>Aika nopeudella {speed2} km/h: <strong>{time2}</strong></p> : null}
+                        {time2 && (time1 !== time2) ? <p>Aika nopeudella {speed2} km/h: <strong>{time2}</strong></p> : null}
                     </div>
                     <div className="col">
                         {consumption1 ? <p>Kulutus nopeudella {speed1} km/h: <strong>{consumption1}</strong></p> : null}
-                        {consumption2 && (consumption1 != consumption2) ? <p>Kulutus nopeudella {speed2} km/h: <strong>{consumption2}</strong></p> : null}
+                        {consumption2 && (consumption1 !== consumption2) ? <p>Kulutus nopeudella {speed2} km/h: <strong>{consumption2}</strong></p> : null}
                     </div>
                 </div>
 
