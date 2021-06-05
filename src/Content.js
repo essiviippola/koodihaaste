@@ -27,7 +27,7 @@ class Content extends React.Component {
                     <div>
                         <hr/>
                         <h2>
-                            Ajamalla {speed1} km/h sijaan {speed2} km/h,
+                            Ajamalla {fasterSpeed} km/h sijaan {slowerSpeed} km/h,
                             matkassa kestää
                             <span className="emphasize"> {timeDifference} </span>
                             kauemmin ja polttoainetta kuluu
