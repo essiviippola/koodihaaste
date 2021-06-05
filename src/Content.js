@@ -34,11 +34,15 @@ class Content extends React.Component {
                         <hr />
                     </div>
                     : null}
-                <div>
-                    {time1 ? <p>Aika nopeudella {speed1} km/h: {time1}</p> : null}
-                    {time2 ? <p>Aika nopeudella {speed2} km/h: {time2}</p> : null}
-                    {consumption1 ? <p>Kulutus nopeudella {speed1} km/h: {consumption1}</p> : null}
-                    {consumption2 ? <p>Kulutus nopeudella {speed2} km/h: {consumption2}</p> : null}
+                <div className="row">
+                    <div className="col">
+                        {time1 ? <p>Aika nopeudella {speed1} km/h: <strong>{time1}</strong></p> : null}
+                        {time2 ? <p>Aika nopeudella {speed2} km/h: <strong>{time2}</strong></p> : null}
+                    </div>
+                    <div className="col">
+                        {consumption1 ? <p>Kulutus nopeudella {speed1} km/h: <strong>{consumption1}</strong></p> : null}
+                        {consumption2 ? <p>Kulutus nopeudella {speed2} km/h: <strong>{consumption2}</strong></p> : null}
+                    </div>
                 </div>
 
             </div>
