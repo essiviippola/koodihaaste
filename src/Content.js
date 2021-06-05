@@ -12,7 +12,7 @@ class Content extends React.Component {
 
         const consumption1 = calculateConsumption(car, distance, speed1);
         const consumption2 = calculateConsumption(car, distance, speed2);
-        const consumptionDifference = calculateConsumptionDifference(car, distance, speed1, speed2)
+        const consumptionDifference = calculateConsumptionDifference(car, distance, speed1, speed2);
 
         const time1 = calculateTime(distance, speed1);
         const time2 = calculateTime(distance, speed2);
@@ -23,7 +23,7 @@ class Content extends React.Component {
                 <hr/>
                 <div>
                     <h3>
-                    Ajamalla {speed1} km/h sijaan {speed2} km/h, 
+                    Ajamalla nopeuden {speed1} km/h sijaan nopeudella {speed2} km/h, 
                     matkassa kestää 
                     <span> {timeDifference} </span>
                     kauemmin ja polttoainetta kuluu 

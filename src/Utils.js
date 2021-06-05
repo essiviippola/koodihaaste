@@ -45,7 +45,7 @@ export function calculateTimeDifference(distance, speed1, speed2) {
     return (timeDifference)
 }
 
-function formatConsumption(consumption){
+function formatConsumption(consumption) {
     consumption = consumption.toFixed(2);
     const literSuffix = (consumption === 1 ? "litra" : "litraa");
     const result = consumption + " " + literSuffix;
