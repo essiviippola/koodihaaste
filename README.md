@@ -5,7 +5,8 @@ Autoilumittarisovellus on vastaus Solidabiksen kevään 2021 koodihaasteeseen. K
 
 Tehtävänä oli suunnitella ja toteuttaa web-sovellus, jonka avulla käyttäjä voisi vertailla kahden eri nopeuden vaikutusta autonsa polttoainekulutukseen mökkimatkallaan. Autovaihtoehtoja on kolme ja jokaisella on oma polttoainekulutuksensa, johon vaikuttaa nopeus, jolla matkustetaan.
 
-## Kuvaus web-sovelluksesta
+## Kuvaus
+Web-sovellus käyttää koodihaasteessa annettuja autojen kulutustietoja ja laskee käyttäjän antamien tietojen (matka mökille, nopeus ja vertailtava nopeus) perusteella, kuinka kauan matka kestää kullakin nopeudella ja näiden eron. Lisäksi sovellus ilmoittaa nopeuksien välisen polttoainekulutuseron.
 
 ## Käytetyt teknologiat
 - React
