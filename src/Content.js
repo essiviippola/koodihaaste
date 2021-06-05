@@ -25,14 +25,16 @@ class Content extends React.Component {
             <div id="content">
                 {timeDifference && consumptionDifference ?
                     <div>
+                        <hr/>
                         <h2>
                             Ajamalla {speed1} km/h sijaan {speed2} km/h,
-                                matkassa kestää
-                                <span className="emphasize"> {timeDifference} </span>
-                                kauemmin ja polttoainetta kuluu
-                                <span className="emphasize"> {consumptionDifference} </span>
-                                vähemmän.
-                            </h2>
+                            matkassa kestää
+                            <span className="emphasize"> {timeDifference} </span>
+                            kauemmin ja polttoainetta kuluu
+                            <span className="emphasize"> {consumptionDifference} </span>
+                            vähemmän.
+                        </h2>
+                        <hr/>
                     </div>
                     : null}
                 <div className="row">
