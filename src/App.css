@@ -31,11 +31,7 @@ html, body {
 header {
     color: var(--color4);
     padding: var(--content_padding);
-    font-size: 20px;
-}
-
-h1 {
-    color: var(--color5);
+    font-size: 21px;
 }
 
 h2 {
