@@ -20,24 +20,25 @@ class Content extends React.Component {
 
         return (
             <div id="content">
-                <hr/>
+                {timeDifference && consumptionDifference ?
+                    <div>
+                        <hr />
+                        <h2>
+                            Ajamalla {speed1} km/h sijaan {speed2} km/h,
+                                matkassa kestää
+                                <span className="emphasize"> {timeDifference} </span>
+                                kauemmin ja polttoainetta kuluu
+                                <span className="emphasize"> {consumptionDifference} </span>
+                                vähemmän.
+                            </h2>
+                        <hr />
+                    </div>
+                    : null}
                 <div>
-                    <h3>
-                    Ajamalla nopeuden {speed1} km/h sijaan nopeudella {speed2} km/h, 
-                    matkassa kestää 
-                    <span> {timeDifference} </span>
-                    kauemmin ja polttoainetta kuluu 
-                    <span> {consumptionDifference} </span>
-                    vähemmän. 
-                    </h3>
-                </div>
-                <hr/>
-                <div>
-                    <p>Aika valitulla nopeudella: {time1}</p>
-                    <p>Aika vertailunopeudella: {time2}</p>
-                    <br/>
-                    <p>Kulutus valitulla nopeudella: {consumption1}</p>
-                    <p>Kulutus vertailunopeudella: {consumption2}</p>
+                    {time1 ? <p>Aika nopeudella {speed1} km/h: {time1}</p> : null}
+                    {time2 ? <p>Aika nopeudella {speed2} km/h: {time2}</p> : null}
+                    {consumption1 ? <p>Kulutus nopeudella {speed1} km/h: {consumption1}</p> : null}
+                    {consumption2 ? <p>Kulutus nopeudella {speed2} km/h: {consumption2}</p> : null}
                 </div>
 
             </div>
