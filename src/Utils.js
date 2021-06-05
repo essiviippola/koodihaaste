@@ -69,3 +69,10 @@ function formatTime(hours) {
     }
     return (result)
 }
+
+// export function formatTimeComparison(timeDifference) {
+//     const timeSuffix = (timeDifference > 0 ? "vähemmän" : "kauemmin")
+//     if (timeDifference == 0) {
+//         const timeSuffix = "yhtä kauan"
+//     }
+// }
