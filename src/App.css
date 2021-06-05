@@ -7,10 +7,13 @@
     --color4: #52734d; */
     
     /* Color palette: https://colorhunt.co/palette/252800 */
+    /* Contrast checking: https://webaim.org/resources/contrastchecker/ */
     --color1: #f8f1f1;
     --color2: #a3d2ca;
     --color3: #5eaaa8;
     --color4: #eb5e0b;
+    --color5: #000000;
+    --color6: #3d6d6b;
 
     /* PADDING */
     --content_padding: 30px 15% 0px 15%;
@@ -23,7 +26,7 @@ html, body {
     padding: 0; 
     height: 100%;
     font-family: "Roboto", sans-serif;
-    color: var(--color3);
+    color: var(--color6);
 }
 
 .icon-h2 {
@@ -32,7 +35,7 @@ html, body {
 }
 
 header {
-    color: var(--color3);
+    color: var(--color5);
     padding: var(--content_padding);
     font-size: 21px;
 }

@@ -45,7 +45,7 @@ export function calculateTimeDifference(distance, speed1, speed2) {
     return (timeDifference)
 }
 
-function formatConsumption(consumption){
+function formatConsumption(consumption) {
     consumption = consumption.toFixed(2);
     const result = consumption + " l ";
     return(result);
@@ -66,3 +66,10 @@ function formatTime(hours) {
     }
     return (result)
 }
+
+// export function formatTimeComparison(timeDifference) {
+//     const timeSuffix = (timeDifference > 0 ? "vähemmän" : "kauemmin")
+//     if (timeDifference == 0) {
+//         const timeSuffix = "yhtä kauan"
+//     }
+// }
