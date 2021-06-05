@@ -11,9 +11,8 @@
     --color1: #f8f1f1;
     --color2: #a3d2ca;
     --color3: #5eaaa8;
-    --color4: #eb5e0b;
-    --color5: #000000;
-    --color6: #3d6d6b;
+    --color4: #3d6d6b;
+    --color5: #eb5e0b;
 
     /* PADDING */
     --content_padding: 30px 15% 0px 15%;
@@ -26,16 +25,11 @@ html, body {
     padding: 0; 
     height: 100%;
     font-family: "Roboto", sans-serif;
-    color: var(--color6);
-}
-
-.icon-h2 {
-    padding-left: 5px;
-    font-size: 20pt;
+    color: var(--color4);
 }
 
 header {
-    color: var(--color5);
+    color: var(--color4);
     padding: var(--content_padding);
     font-size: 21px;
 }
@@ -101,7 +95,7 @@ form {
 .car-icon {
     position: relative;
     top: 3px;
-    color: var(--color4);
+    color: var(--color5);
 }
 
 .page-footer {
