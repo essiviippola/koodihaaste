@@ -39,7 +39,7 @@ class Content extends React.Component {
                         <hr />
                     </div>
                     : null}
-                <div className="row">
+                <div className="row content-details">
                     <div className="col">
                         {time1 ? <p>Matkaan kuluva aika nopeudella {speed1} km/h: <strong>{time1}</strong></p> : null}
                         {time2 && (time1 !== time2) ? <p>Matkaan kuluva aika nopeudella {speed2} km/h: <strong>{time2}</strong></p> : null}
