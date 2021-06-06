@@ -6,9 +6,9 @@ class Content extends React.Component {
     render() {
 
         const car = this.props.valueFromParent.car;
-        const distance = this.props.valueFromParent.distance;
-        const speed1 = this.props.valueFromParent.speed1;
-        const speed2 = this.props.valueFromParent.speed2;
+        const distance = Math.abs(this.props.valueFromParent.distance);
+        const speed1 = Math.abs(this.props.valueFromParent.speed1);
+        const speed2 = Math.abs(this.props.valueFromParent.speed2);
 
         const consumption1 = calculateConsumption(car, distance, speed1);
         const consumption2 = calculateConsumption(car, distance, speed2);
