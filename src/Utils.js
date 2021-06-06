@@ -1,14 +1,23 @@
+const consumptionDict = { "A": 3.0, "B": 3.5, "C": 4.0};
+
 export function calculateConsumption(car, distance, speed, format = true) {
     let consumption = null;
     if (car && distance && speed) {
-        const consumptionDict = { "A": 3.0, "B": 3.5, "C": 4.0 };
-        const consumptionPer100km = consumptionDict[car];
-        consumption = distance / 100 * 1.009 ** (speed - 1) * consumptionPer100km;
+        consumption = distance / 100 * 1.009 ** (speed - 1) * consumptionDict[car];
         if(format){
             consumption = formatConsumption(consumption);
         }
     }
     return (consumption);
+}
+
+export function calculateConsumptionPer100Km(car, speed, format = true) {
+    let consumptionPer100Km = null;
+    consumptionPer100Km = 1.009 ** (speed - 1) * consumptionDict[car];
+    if(format){
+        consumptionPer100Km = formatConsumption(consumptionPer100Km);
+    }
+    return(consumptionPer100Km);
 }
 
 export function calculateConsumptionDifference(car, distance, speed1, speed2) {
@@ -48,8 +57,7 @@ export function calculateTimeDifference(distance, speed1, speed2) {
 function formatConsumption(consumption) {
     consumption = consumption.toFixed(2);
     consumption = Math.abs(consumption);
-    const result = consumption + " l ";
-    return(result);
+    return(consumption);
 }
 
 function formatTime(hours) {
