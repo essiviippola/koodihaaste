@@ -12,10 +12,10 @@ function Footer(){
                 <h2 className="h6 text-uppercase">Yhteystiedot</h2>
                 <p>Essi Viippola
                     <br/><i className="bi bi-envelope" role="img" aria-label="email"></i> essi.viippola@live.fi
-                    <br/><i className="bi-github" role="img" aria-label="GitHub"></i> <a className="url" href="https://github.com/essiviippola" target="_blank">essiviippola</a>
+                    <br/><i className="bi-github" role="img" aria-label="GitHub"></i> <a className="url" href="https://github.com/essiviippola" target="_blank" rel="noreferrer">essiviippola</a>
                     <br/><br/>Sami Määttä
                     <br/><i className="bi bi-envelope" role="img" aria-label="email"></i> saomaatta@gmail.com
-                    <br/><i className="bi-github" role="img" aria-label="GitHub"></i> <a className="url" href="https://github.com/samimaat" target="_blank">samimaat</a>
+                    <br/><i className="bi-github" role="img" aria-label="GitHub"></i> <a className="url" href="https://github.com/samimaat" target="_blank" rel="noreferrer">samimaat</a>
                     <br/>
                 </p>
             </div>
