@@ -19,65 +19,8 @@
 
 }
 
-html, body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0; 
-    height: 100%;
-    font-family: "Roboto", sans-serif;
-    color: var(--color4);
-}
-
-header {
-    color: var(--color4);
-    padding: var(--content_padding);
-    font-size: 21px;
-}
-
-h2 {
-    font-weight: 500;
-}
-
-.jumbotron {
-    padding-top: 100px;
-    background: var(--color2);
-    text-align: center;
-    height: 300px;
-}
-
-form {
-    padding-right: 20px;
-}
-
-.form-check-label{
-    font-size: 18px;
-}
-
-.input-group-text {
-    width: 60px;
-    justify-content: center;
-    background-color: var(--color3);
-    color: white;
-    border: none;
-}
-
-.radio-buttons {
-    padding-bottom: 20px;
-}
-
-#content {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#container {
-    width: 100%;
-    min-height: 100%;
-    position: relative;
-}
-
-.emphasize {
-    color: var(--color5);
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 #body {
@@ -85,6 +28,17 @@ form {
     display: flex;
     overflow: auto;
     background-color: var(--color1);
+}
+
+.car-icon {
+    position: relative;
+    top: 3px;
+    color: var(--color5);
+}
+
+.car-icon:active ~ .car-sound {
+    visibility: visible;
+    color: var(--color5);
 }
 
 .car-icon-line {
@@ -100,19 +54,69 @@ form {
     color: var(--color2);
 }
 
-.car-icon {
-    position: relative;
-    top: 3px;
-    color: var(--color5);
-}
-
 .car-sound {
     visibility: hidden;
 }
 
-.car-icon:active ~ .car-sound {
-    visibility: visible;
+#container {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+#content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.emphasize {
     color: var(--color5);
+}
+
+form {
+    padding-right: 20px;
+}
+
+.form-check-label{
+    font-size: 18px;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+header {
+    color: var(--color4);
+    padding: var(--content_padding);
+    font-size: 21px;
+}
+
+hr {
+    color: var(--color3);
+}
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0; 
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    color: var(--color4);
+}
+
+.input-group-text {
+    width: 60px;
+    justify-content: center;
+    background-color: var(--color3);
+    color: white;
+    border: none;
+}
+
+.jumbotron {
+    padding-top: 100px;
+    background: var(--color2);
+    text-align: center;
+    height: 300px;
 }
 
 .page-footer {
@@ -123,14 +127,19 @@ form {
     box-shadow: 0 50vh 0 50vh var(--color3);
 }
 
+.radio-buttons {
+    padding-bottom: 20px;
+}
+
+.radio-buttons input:checked {
+    background-color: var(--color3);
+    border: var(--color3);
+}
+
 .url {
     color: white;
 }
 
 .url:hover {
     color: var(--color4);
-}
-
-*, *::before, *::after {
-    box-sizing: border-box;
 }
