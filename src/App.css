@@ -1,11 +1,6 @@
 :root {
     /* COLORS */
-    /* Used color palette: https://colorhunt.co/palette/264587 */
-    /* --color1: #feffde;
-    --color2: #ddffbc;
-    --color3: #91c788;
-    --color4: #52734d; */
-    
+
     /* Color palette: https://colorhunt.co/palette/252800 */
     /* Contrast checking: https://webaim.org/resources/contrastchecker/ */
     --color1: #f8f1f1;
@@ -24,7 +19,7 @@
 }
 
 #body {
-    padding: 100px;
+    padding: 5% 10% 5% 10%;
     display: flex;
     overflow: auto;
     background-color: var(--color1);
@@ -69,6 +64,12 @@
     padding-right: 20px;
 }
 
+.content-summary {
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
+}
+
 .emphasize {
     color: var(--color5);
 }
@@ -79,10 +80,6 @@ form {
 
 .form-check-label{
     font-size: 18px;
-}
-
-h2 {
-    font-weight: 500;
 }
 
 header {
