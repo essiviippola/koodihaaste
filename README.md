@@ -18,7 +18,7 @@ Kehitetty Windows 10 -käyttöjärjestelmällä.
 
 ## Käyttö
 ### Vaatimukset
-Reactin käyttöä varten tarvitaan Node.js tai npm, joten lataa se heidän [nettisivuiltaan (500 mb)](https://www.npmjs.com/get-npm).
+Reactin käyttöä varten tarvitaan Node.js tai npm, joten lataa se [Node.js lataussivulta (englanniksi, 500 mb)](https://www.npmjs.com/get-npm).
 
 ### Web-sovelluksen käynnistäminen
 1. Lataa repositorio ja pura se haluamaasi kansioon.
