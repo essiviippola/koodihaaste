@@ -29,7 +29,6 @@ class Content extends React.Component {
                 {timeDifference && consumptionDifference ?
                     <div>
                         <hr />
-                        <br />
                         <p className="content-summary">
                             Ajamalla nopeuden {fasterSpeed} km/h sijaan nopeudella {slowerSpeed} km/h,
                             matkassa kestää
@@ -37,9 +36,7 @@ class Content extends React.Component {
                             kauemmin ja polttoainetta säästyy
                             <span className="emphasize"> {consumptionDifference} l</span>
                             </p>
-                        <br />
                         <hr />
-                        <br />
                     </div>
                     : null}
                 <div className="row">
