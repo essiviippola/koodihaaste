@@ -37,6 +37,7 @@ class App extends Component {
                     <div className="car-icon-line">
                         <div className="car-line"></div>
                         <div className="car-icon"><i className="fas fa-car-side fa-2x"></i></div>
+                        <span className="car-sound">TÖÖT TÖÖT</span>
                     </div>
                     <Footer />
                 </div>

@@ -95,7 +95,6 @@ form {
 
 .car-line {
     width: 75%;
-    position: relative;
     margin: 10px;
     border-bottom: 2px dashed;
     color: var(--color2);
@@ -104,6 +103,15 @@ form {
 .car-icon {
     position: relative;
     top: 3px;
+    color: var(--color5);
+}
+
+.car-sound {
+    visibility: hidden;
+}
+
+.car-icon:active ~ .car-sound {
+    visibility: visible;
     color: var(--color5);
 }
 
