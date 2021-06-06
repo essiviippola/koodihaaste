@@ -115,6 +115,14 @@ form {
     box-shadow: 0 50vh 0 50vh var(--color3);
 }
 
+.url {
+    color: white;
+}
+
+.url:hover {
+    color: var(--color4);
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
