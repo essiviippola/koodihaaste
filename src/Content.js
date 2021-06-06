@@ -34,8 +34,7 @@ class Content extends React.Component {
                             matkassa kestää
                             <span className="emphasize"> {timeDifference} </span>
                             kauemmin ja polttoainetta säästyy
-                            <span className="emphasize"> {consumptionDifference} </span>
-                            l.
+                            <span className="emphasize"> {consumptionDifference} l</span>
                             </p>
                         <hr />
                     </div>
